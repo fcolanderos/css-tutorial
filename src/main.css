@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #CBE1F1;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.avatar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 250px;
+    padding: 1.1em 2.5em 1.1em 1.1em;
+    width: 20%;
+}
+
+.avatar-user {
+    display: flex;
+    align-items: center;
+    column-gap: 1.8rem;
+}
+
+.avatar-img {
+    width: 5.2em;
+    height: 5.2em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.avatar-status {
+    height: 2em;
+    width: 2em;
+    margin-left: 2rem;
+    background-color: #5dbc3c;
+    border-radius: 50%;
+}
