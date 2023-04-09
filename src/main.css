@@ -18,6 +18,30 @@ header {
     margin:  0 auto;
 }
 
+nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 66%;
+    height: 100vh;
+    background: white;
+    padding: 4.6em;
+    transition: right .5s ease-in-out;
+}
+
+.menu-btn {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    cursor: pointer;
+    display: block;
+    width: 3rem;
+    margin-left: auto;
+    margin-bottom: 6.6em;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,11 +77,23 @@ a.cart:hover {
     background-color: #B5C0CE;
 }
 
+.mobile-cart-menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.open {
+    right: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 4.3em;
 }
 
@@ -73,4 +109,21 @@ ul li a.active {
 
 ul li a:hover {
     color: #0460BC;
+}
+
+@media screen and (min-width: 600px) {
+    .menu-btn, .close-btn {
+        display: none;
+    }
+    
+    nav {
+        position: unset;
+        height: auto;
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+    ul {
+        flex-direction: row;
+    }
 }
